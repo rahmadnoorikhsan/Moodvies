@@ -38,9 +38,9 @@ API_KEY=(Your TMDB API Key)
 ## Preview :
 <table>
     <tr>
-        <td><img src="screenshot/home.jpg" align="center" alt="4"</td>
-        <td><img src="screenshot/detail.jpg" align="center" alt="4"</td>
-        <td><img src="screenshot/now playing.jpg" align="center" alt="4"</td>
-        <td><img src="screenshot/now playing.jpg" align="center" alt="4"</td>
+        <td><img src="https://raw.githubusercontent.com/rahmadnoorikhsan/Moodvies/refs/heads/master/screenshots/home.jpg" align="center" alt="4"</td>
+        <td><img src="https://raw.githubusercontent.com/rahmadnoorikhsan/Moodvies/refs/heads/master/screenshots/detail.jpg" align="center" alt="4"</td>
+        <td><img src="https://raw.githubusercontent.com/rahmadnoorikhsan/Moodvies/refs/heads/master/screenshots/trailer.jpg" align="center" alt="4"</td>
+        <td><img src="https://raw.githubusercontent.com/rahmadnoorikhsan/Moodvies/refs/heads/master/screenshots/reviews.jpg" align="center" alt="4"</td>
     </tr>
 <table>
