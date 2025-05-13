@@ -35,7 +35,7 @@ API_KEY=(Your TMDB API Key)
 ```
 7. Build and run the app on an emulator or physical device.
 
-## Preview :
+## Preview
 <table>
     <tr>
         <td><img src="https://raw.githubusercontent.com/rahmadnoorikhsan/Moodvies/refs/heads/master/screenshots/home.jpg" align="center" alt="4"</td>
