@@ -1,0 +1,54 @@
+[versions]
+activityKtx = "1.10.1"
+agp = "8.10.0"
+core = "12.1.0"
+expandableText = "2.0.1"
+fragmentKtx = "1.8.6"
+glide = "4.16.0"
+hiltAndroid = "2.51.1"
+kotlin = "2.0.21"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+lifecycleViewmodelKtx = "2.9.0"
+loggingInterceptor = "4.12.0"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+kotlin-ksp = "2.0.21-1.0.28"
+pagingRuntimeKtx = "3.3.6"
+retrofit = "2.11.0"
+shimmer = "0.5.0"
+
+[libraries]
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+androidyoutubeplayer = { module = "com.pierfrancescosoffritti.androidyoutubeplayer:core", version.ref = "core" }
+expandable-text = { module = "com.github.giangpham96:expandable-text", version.ref = "expandableText" }
+expandable_textview = { module = "com.github.giangpham96.expandable-text:expandable_textview", version.ref = "expandableText" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref ="hiltAndroid" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize",  version.ref = "kotlin"  }

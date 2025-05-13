@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="24dp"
+    tools:context=".presentation.detail.DetailActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_backdrop"
+        android:layout_width="0dp"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bottom_gradient_overlay"
+        app:layout_constraintBottom_toBottomOf="@id/iv_backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_backdrop" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="104dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:transitionName="iv_movie"
+        app:layout_constraintBottom_toBottomOf="@id/iv_backdrop"
+        app:layout_constraintStart_toStartOf="@id/iv_backdrop"
+        app:layout_constraintTop_toBottomOf="@id/iv_backdrop"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_poster"
+        app:layout_constraintTop_toTopOf="@id/iv_poster"
+        tools:text="Captain Amerika: Civil War" />
+
+    <TextView
+        android:id="@+id/tv_date_with_duration"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Apr 2025 • 127 mins" />
+</androidx.constraintlayout.widget.ConstraintLayout>

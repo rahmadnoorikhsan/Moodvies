@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_original_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:text="@string/original_title"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_label_original"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_value_label_original"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_original_title"
+        app:layout_constraintTop_toTopOf="@id/tv_label_original_title"
+        tools:text="Ejen Ali: The Movie 2" />
+
+    <TextView
+        android:id="@+id/tv_label_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_marginTop="16dp"
+        android:text="@string/status"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_original_title" />
+
+    <TextView
+        android:id="@+id/tv_value_status"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_status"
+        app:layout_constraintTop_toTopOf="@id/tv_label_status"
+        tools:text="Post Production" />
+
+    <TextView
+        android:id="@+id/tv_label_runtime"
+        android:layout_width="0dp"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/runtime"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_runtime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_status" />
+
+    <TextView
+        android:id="@+id/tv_value_runtime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_runtime"
+        app:layout_constraintTop_toTopOf="@id/tv_label_runtime"
+        tools:text="2 hrs" />
+
+    <TextView
+        android:id="@+id/tv_label_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:text="@string/original_language"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_runtime" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_value_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_language"
+        app:layout_constraintTop_toTopOf="@id/tv_label_language"
+        tools:text="Melayu" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_label_country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/production_countries"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_language" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_value_country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_country"
+        app:layout_constraintTop_toTopOf="@id/tv_label_country"
+        tools:text="Malaysia" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_label_companies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/companies"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_companies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_value_country" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_value_companies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_companies"
+        app:layout_constraintTop_toTopOf="@id/tv_label_companies"
+        tools:text="WAU Animation\nPrimeworks Studios\nKomet Productions" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_label_budget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/budget"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_value_companies" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_value_budget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_budget"
+        app:layout_constraintTop_toTopOf="@id/tv_label_budget"
+        tools:text="US$2.200.000" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_label_revenue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/revenue"
+        app:layout_constraintEnd_toStartOf="@id/tv_value_revenue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_budget" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/tv_value_revenue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label_revenue"
+        app:layout_constraintTop_toTopOf="@id/tv_label_revenue"
+        tools:text="-" />
+</androidx.constraintlayout.widget.ConstraintLayout>
