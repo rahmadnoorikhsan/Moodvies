@@ -27,13 +27,13 @@ To build and run the project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/rahmadnoorikhsan/Moodvies.git`
 2. Open the project in Android Studio.
 3. Ensure that the required SDK versions and dependencies are installed.
-5. Add this code to your `local.properties` file.
+4. Add this code to your `local.properties` file.
 ```
 BASE_URL=https\://api.themoviedb.org/3/
 BASE_URL_IMAGE=https\://image.tmdb.org/t/p/original
 API_KEY=(Your TMDB API Key)
 ```
-7. Build and run the app on an emulator or physical device.
+5. Build and run the app on an emulator or physical device.
 
 ## Preview
 <table>
